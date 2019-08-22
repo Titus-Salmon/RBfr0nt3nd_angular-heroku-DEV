@@ -1,0 +1,112 @@
+@import '../../variables_t0d.scss';
+@import '../../animations.scss';
+
+body,
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Futura-Pt;
+  // width: 100%;
+  width: auto;
+  // height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+  // z-index: -1; // if use z-index of -1, can't click on carousel arrows
+}
+
+.slide-content {
+  height: 36vh;
+}
+
+.slide {
+  background-size: cover;
+  // background-size: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url('../../assets/images/St.Matthews_crop.jpg');
+}
+
+.slide2 {
+  background-image: url('../../assets/images/GLstore_crop.jpg');
+}
+
+.slide3 {
+  background-image: url('../../assets/images/front+of+SH_crop.jpg');
+}
+
+.slide4 {
+  background-image: url('../../assets/images/Middletown_Outside_crop.jpg');
+}
+
+.slide5 {
+  background-image: url('../../assets/images/NA+Store+Picture_crop.jpg');
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 1rem;
+  background-color: $color_lt-gray1;
+  color: $color_deep-green;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  // border-style: solid;
+}
+
+.background-circle {
+  // background: #00bcd4;
+  background: white;
+  // opacity: 0.5;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin-left: 1rem;
+  position: absolute;
+}
+
+#arrow-left-tablet,
+#arrow-left-mobile {
+  // border-width: 1rem 1.5rem 1rem 0;
+  // border-color: transparent #fff transparent transparent;
+  // left: 0;
+  // margin-left: 6px;
+  // margin-top: 5px;
+  // transform: translate(100px, 0);
+  // background-color: $color_deep-green;
+  left: 0;
+  // margin-left: 30px;
+  margin-left: 10vw;
+}
+
+#arrow-right-tablet,
+#arrow-right-mobile {
+  // border-width: 1rem 0 1rem 1.5rem;
+  // border-color: transparent transparent transparent #fff;
+  // right: 0;
+  // margin-right: 1rem;
+  // background-color: $color_deep-green;
+  right: 0;
+  // margin-right: 30px;
+  margin-right: 10vw;
+}

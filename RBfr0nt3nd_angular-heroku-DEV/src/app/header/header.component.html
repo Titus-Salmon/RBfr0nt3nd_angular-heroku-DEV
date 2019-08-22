@@ -1,0 +1,166 @@
+<!--v//mobile header setup-->
+<!-- <div class="fixed-top card-group hide-for-769-and-above_t0d">
+  <div class="card rainbow-background1_t0d" style="height: 113px; position: relative; width: 100%">
+    <div class="center-div-transform_t0d">
+      <div style="text-align: center">
+        <img class="rb-logo-mobile_t0d" src="../../assets/images/RB_NatFoodMkt_WellnessCenter_lrg-01.png">
+      </div>
+      <div style="padding: 10px 0">
+        <p class="text-caption-logo-mobile_t0d">
+          Family
+          Owned and Operated
+          Since
+          1977 - Louisville's Wellness Experts</p>
+      </div>
+    </div>
+  </div>
+</div> -->
+<!--^//mobile header setup-->
+
+<!--v//tablet+ header setup-->
+<!-- <div class="fixed-top hide-for-768-and-below_t0d rainbow-background1_t0d" style="height: 113px;"> -->
+<div class="fixed-top hide-for-768-and-below_t0d rainbow-background1_t0d" style="height: 113px; padding-top: 33px">
+  <div style="position: relative">
+    <div class="header-third-division-tablet-up_t0d">
+      <div style="position: relative">
+        <p class="center-div-transform_t0d text-caption-logo-tablet-up_t0d">
+          Family Owned and Operated Since 1977</p>
+      </div>
+    </div>
+    <div class="header-third-division-tablet-up_t0d">
+      <div style="position: relative">
+        <img class="center-div-transform_t0d" style="max-width: 70%;"
+          src="../../assets/images/RB_NatFoodMkt_WellnessCenter_lrg-01.png">
+      </div>
+    </div>
+    <div class="header-third-division-tablet-up_t0d">
+      <div style="position: relative">
+        <p class="center-div-transform_t0d text-caption-logo-tablet-up_t0d">
+          Louisville's Wellness
+          Experts</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--^//tablet+ header setup-->
+
+
+<!--v//Navbar-->
+<!-- <mdb-navbar SideClass="navbar navbar-expand-lg navbar-light" class="tablet-navbar_t0d rainbow-background2_t0d"
+  [containerInside]="false" mdbStickyHeader> -->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-light" class="fixed-top tablet-navbar_t0d rainbow-background2_t0d"
+  [containerInside]="false">
+  <!--NOTE: mdbStickyHeader doesn't seem to work well with mobile, so not using it-->
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand" href="#"><img class="hide-for-769-and-above_t0d" height="50px"
+        src="../../assets/images/RB_NatFoodMkt_WellnessCenter_lrg-01.png"></a></mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+    <!-- Links -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+      </li>
+      <!-- About Dropdown -->
+      <li class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          About<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Our Story</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Ingredient Standards</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Staff & Apply</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Customer Testimonials</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Wholesale</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Place An Order</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">New Vendors</a>
+          <div class="divider dropdown-divider"></div>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+        </div>
+      <li class="nav-item">
+      <li class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          Wellness<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Wellness Center</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Wellness Ambassadors</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Book With A Practicioner</a>
+        </div>
+      <li class="nav-item dropdown" dropdown>
+        <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+          Community<span class="caret"></span></a>
+        <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Events</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Host An Event</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Weekly Farmer's Market</a>
+          <a class="dropdown-item waves-light" mdbWavesEffect href="#">Donation Requests</a>
+        </div>
+      <li class="nav-item">
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Savings</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Rainbow Rewards</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Send A Gift</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link waves-light" mdbWavesEffect>Contact</a>
+      </li>
+    </ul>
+
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto nav-flex-icons">
+      <li class="nav-item">
+        <a class="nav-link">
+          <mdb-icon fab icon="facebook"></mdb-icon>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <mdb-icon fab icon="instagram"></mdb-icon>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <mdb-icon fab icon="twitter"></mdb-icon>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <mdb-icon fab icon="pinterest"></mdb-icon>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <mdb-icon fab icon="foursquare"></mdb-icon>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">
+          <mdb-icon far icon="envelope"></mdb-icon>
+        </a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link">
+          <div class="btn-group" mdbDropdown>
+            <mdb-icon fas icon="user" mdbDropdownToggle></mdb-icon>
+            <div class="dropdown-menu dropdown-menu-right dropdown-primary">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="divider dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </div>
+        </a>
+      </li> -->
+    </ul>
+  </links>
+  <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--^//Navbar-->
